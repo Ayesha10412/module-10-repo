@@ -141,7 +141,6 @@ font-weight: Medium;
     margin: 0 auto;
     margin-bottom: 100px;
     /* border:2px solid red; */
-
 }
 .fact-name{
     font-size: 1rem;
@@ -150,6 +149,7 @@ font-weight: Medium;
     margin-top: 10px;
 }
 .facts-des{
+
     margin-bottom: 100px;
 }
 .section-title{
@@ -199,6 +199,82 @@ filter: grayscale(100%);
   justify-content: center;
   align-items: center;
 }
+.features-enjoy{
+  height:1050px;
+  gap:144px;
+  margin-bottom: 130px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ /* border:2px solid red;  */
+}
+
+
+.features-des-container{
+  height:982px;
+  margin-top: 39px;
+  margin-bottom: 38px;
+}
+
+.enjoy-title{
+  color:#131313;
+  font-size: 2.8rem;
+  font-weight: Bold;
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.enjoy-des{
+  margin-bottom: 30px;
+}
+.enjoy-card{
+   max-width: 586px;
+  height:170px;  
+  /* background-color: #FFFFFF; */
+  margin: 0 auto;
+margin-top: 15px;
+  border-radius: 8px;  
+  gap:10px;
+  box-shadow: 0 4px 30px 0  rgba(0,0,0,0.06);
+}
+.feature-card{
+padding:20px;
+ 
+  
+}
+.card-title{
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.card-des{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.enjoy-image{
+  
+  height:1059px;
+  margin-bottom: 77px;
+} 
+.enjoy-image img{
+  height:982px;
+  width:100%;
+}
+#experience-badge{
+  padding: 45px 42px;
+  margin-left: -100px;
+  margin-top: -150px;
+}
+#experience-year{
+  font-size: 4rem;
+  font-weight: Bold;
+  color:#FFFFFF;
+}
+#experience{
+  font-size: 1.5rem;
+  font-weight: Medium;
+}
 
 /* responsive media query */
   @media screen and (max-width: 576px){
@@ -217,7 +293,17 @@ filter: grayscale(100%);
         margin-left: 20px; 
         
     }
-    .facts-container, .footer-content{
+    .features-enjoy{
+     grid-template-columns: 1fr;
+     gap:20px;
+     height: auto;
+    }
+    #experience-badge{
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+    .facts-container, 
+    .footer-content{
         grid-template-columns: repeat(1, 1fr);
      
        justify-items: center;
@@ -225,5 +311,6 @@ filter: grayscale(100%);
 .footer-content{
   gap:50px;
 }
+
     
   }
