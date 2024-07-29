@@ -85,7 +85,8 @@ font-weight: Medium;
     /* border:2px solid red; */
 }
 .teams{
-    align-items: center;
+  justify-content: center;
+     align-items: center; 
     margin-top: 100px;
   
 }
@@ -95,10 +96,10 @@ font-weight: Medium;
     grid-template-columns: repeat(2, 1fr);
 }
 .team-features-container{
-    margin-left: 130px;
-    max-width: 530px;
+     margin-left: 130px;
+    max-width: 540px;
 }
-.team-features-container h3{
+.feature-title{
     font-size: 2.8rem;
     margin-bottom: 20px;
  
@@ -135,8 +136,11 @@ font-weight: Medium;
 }
 .facts-container{
     display: grid;
-    gap: 120px;
+    gap: 90px;
     grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    margin-bottom: 100px;
+    /* border:2px solid red; */
 
 }
 .fact-name{
@@ -146,9 +150,6 @@ font-weight: Medium;
     margin-top: 10px;
 }
 .facts-des{
-     flex-direction: column; 
-    justify-content: center;
-    align-items: center;
     margin-bottom: 100px;
 }
 .section-title{
@@ -157,25 +158,72 @@ font-weight: Medium;
     font-weight: Bold;
     margin-bottom: 20px;
 }
+.sponsor-info{
+  max-width: 540px;
+  margin: 50px auto; 
+  text-align: center;
+  
+
+}
+.title{
+  color: #131313;
+  font-size: 2.8rem;
+  font-weight: Bold;
+}
+.des{
+  
+  margin-top: 10px;
+}
+.footer-content{
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+ gap:24px; 
+justify-items: center;
+/* border: 2px solid red; */
+
+}
+.footer-content img{
+  max-width: 166px;
+filter: grayscale(100%);
+}
+.footer-container{
+  max-width: 1240px;
+  height: 100px;
+  background-color: rgba(255, 244, 231, 1.00);
+  margin: 0 auto;
+  margin-top: 130px;
+  /* border: 2px solid  red; */
+  border-radius: 5px;
+  /* text-align: center; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /* responsive media query */
   @media screen and (max-width: 576px){
     .navbar, .nav-link{
         flex-direction: column;
     }
-    .teams{
+    .teams {
+
         flex-direction: column;
 
-    }
+    } 
     .team-image-container{
         grid-template-columns: repeat(1, 1fr);
     }
     .team-features-container{
-        margin-left: 20px;
+        margin-left: 20px; 
+        
     }
-    .facts-container{
+    .facts-container, .footer-content{
         grid-template-columns: repeat(1, 1fr);
-        margin-left: 100px;
+     
+       justify-items: center;
     }
+.footer-content{
+  gap:50px;
+}
     
   }
